@@ -1,0 +1,78 @@
+CyberLab - third-party software notices
+=======================================
+
+This folder holds CyberLab and the unmodified third-party software it needs to
+run. CyberLab itself is proprietary: see LICENSE.txt. The third-party licence
+texts are in the LICENSES folder. BUILD-INFO.json names the exact versions in
+this copy.
+
+Qt for Python and Qt (GNU LGPL version 3)
+-----------------------------------------
+This program uses Qt for Python (PySide6 6.11.1 and shiboken6 6.11.1) and
+the Qt 6.11.1 libraries Qt Core, Qt GUI and Qt Widgets, with the Qt Windows
+platform plugin and Windows style plugin. They are made by The Qt Company Ltd.
+and other contributors. They are offered under LGPL-3.0-only OR
+GPL-2.0-only OR GPL-3.0-only, or under a commercial Qt licence. CyberLab uses
+them under the GNU Lesser General Public License version 3
+(LICENSES/LGPL-3.0.txt), which adds permissions to the GNU General Public
+License version 3 (LICENSES/GPL-3.0.txt). No commercial Qt licence is used;
+LICENSES/LicenseRef-Qt-Commercial.txt is shipped only because those packages
+include it. These licence texts are byte-identical to the ones in the official
+Qt 6.11.1 source archives below.
+
+No Qt module that is available only under the GPL is included.
+
+These libraries are not modified. They are separate files in the
+app\_internal folder: the Qt6*.dll files, the PySide6 and shiboken6 folders,
+and the PySide6\plugins folder. The program loads them at each start, so you can
+replace them with modified versions that keep the same interface.
+
+Corresponding source
+--------------------
+The complete corresponding source code of these libraries, in exactly these
+versions, is the two official archives from download.qt.io:
+
+  qtbase-everywhere-src-6.11.1.tar.xz
+    SHA-256 d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
+    Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, qwindows.dll and
+    qmodernwindowsstyle.dll
+
+  pyside-setup-everywhere-src-6.11.1.tar.xz
+    SHA-256 6ffd9835bb0dd2c56f061d62f1616bb1707cfc0202b80e3165d6be087f3965e2
+    the PySide6 and shiboken6 modules and libraries
+
+They are distributed alongside this zip, in the folder or archive named
+CyberLab-<version>-win64-portable-corresponding-source, with a SOURCES.txt
+that lists them. Whoever gives you this copy must give you that source too,
+or offer you equivalent access to it from the same place (LGPL version 3,
+section 4, and GPL version 3, section 6).
+
+Third-party code inside Qt
+--------------------------
+The shipped Qt files contain third-party code under its own licences.
+THIRD-PARTY-NOTICES.txt lists each such component, the file it is in, its
+licence, its copyright notice, and its full licence text, all copied from the
+Qt 6.11.1 source above.
+
+Python
+------
+The Python 3.14.5 runtime is made by the Python Software Foundation and
+others, under the PSF License Agreement and the other licences listed in
+LICENSES/Python-LICENSE.txt, including those of OpenSSL, libffi, bzip2,
+zstd and SQLite. That file also states, under "Additional Conditions for
+this Windows binary build", the conditions for Microsoft Distributable Code.
+
+Microsoft Visual C++ runtime
+----------------------------
+This copy contains no Microsoft Visual C++ runtime file. CyberLab needs
+Microsoft Visual C++ Redistributable (x64), version 14.44 or later, which
+you install from Microsoft:
+  https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+Start CyberLab with "Start CyberLab.cmd", which checks for it first.
+
+PyInstaller
+-----------
+The program that starts CyberLab was built with PyInstaller 6.20.0. Its
+bootloader is covered by the GNU General Public License version 2 or later,
+with an exception that allows it to be distributed with other programs
+without restriction from that licence (LICENSES/PyInstaller-COPYING.txt).

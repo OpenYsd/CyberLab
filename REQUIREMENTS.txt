@@ -1,0 +1,28 @@
+﻿CyberLab - before you start
+===========================
+
+CyberLab needs Microsoft Visual C++ Redistributable (x64), version 14.44 or
+later. It is free and comes from Microsoft; CyberLab does not include it.
+Install it from Microsoft's page, then open "Start CyberLab" again:
+
+  https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+  Direct link (x64): https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+Always start CyberLab with "Start CyberLab". It checks for the
+Redistributable first. The program in the app folder cannot explain a missing
+Redistributable itself.
+
+
+‫CyberLab - قبل التشغيل‬
+======================
+
+‫يحتاج CyberLab إلى Microsoft Visual C++ Redistributable (x64)، الإصدار 14.44 أو أحدث.‬
+‫وهو مجاني ويُنزَّل من Microsoft، ولا يتضمنه CyberLab.‬
+‫ثبّته من صفحة Microsoft، ثم افتح "Start CyberLab" مرة أخرى:‬
+
+  https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+‫الرابط المباشر (x64):‬
+  https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+‫شغّل CyberLab دائمًا عبر "Start CyberLab"، فهو يتحقق من وجود الحزمة أولًا.‬
+‫أما البرنامج في مجلد app فلا يستطيع وحده أن يشرح غياب هذه الحزمة.‬

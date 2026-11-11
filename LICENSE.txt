@@ -1,0 +1,89 @@
+CyberLab - licence terms
+========================
+
+This folder holds two kinds of software: CyberLab's own application, and
+third-party libraries and runtimes that CyberLab uses. These terms say what
+applies to each. They are not a licence for any third-party software.
+
+1. CyberLab application code (proprietary)
+   CyberLab's own code, interface and documentation are proprietary and closed
+   source. All rights in them are reserved by CyberLab's copyright holder.
+   You may run this copy of CyberLab on your own computer. No other right in
+   CyberLab's own code is granted: you may not copy it for others, sell it,
+   publish it, or modify it, except as section 3 allows. Receiving this copy
+   does not give you CyberLab's source code. CyberLab's own code is not
+   licensed under the GNU LGPL or any other open-source licence.
+
+2. Bundled third-party libraries and runtimes
+   The following are included unmodified. They are not owned by CyberLab's
+   copyright holder, and they remain under their own licences, which these
+   terms do not change or limit:
+   - Qt 6.11.1 (Qt Core, Qt GUI, Qt Widgets, the Windows platform plugin and
+     the Windows style plugin), by The Qt Company Ltd. and other contributors;
+   - Qt for Python: PySide6 6.11.1 and shiboken6 6.11.1, by The Qt Company
+     Ltd. and other contributors;
+   - the Python 3.14.5 runtime and the libraries it includes, by the Python
+     Software Foundation and others;
+   - the PyInstaller 6.20.0 bootloader that starts CyberLab, by the
+     PyInstaller Development Team.
+   Nothing in these terms limits any right that a third-party licence gives
+   you.
+
+3. Your rights for Qt, Qt for Python and shiboken (GNU LGPL version 3)
+   Qt, PySide6 and shiboken6 are used under the GNU Lesser General Public
+   License version 3 (LICENSES/LGPL-3.0.txt, which adds permissions to
+   LICENSES/GPL-3.0.txt). For those libraries, and only to the extent that
+   licence requires:
+   a. you may modify them, and replace the copies in the app\_internal
+      folder with modified versions that keep the same interface;
+   b. you may reverse engineer CyberLab to debug such modifications;
+   c. you are entitled to the complete corresponding source code of the
+      exact library versions in this copy, as NOTICE.txt describes.
+   These rights do not extend to CyberLab's own code in any other way, and
+   do not extend to the Microsoft code in section 5.
+
+4. Third-party licence texts and notices
+   - NOTICE.txt names each third-party component, its licence, and how to
+     get the corresponding source of the LGPL libraries.
+   - THIRD-PARTY-NOTICES.txt holds the copyright notices and licence texts
+     of the third-party code inside the shipped Qt files.
+   - The LICENSES folder holds the GNU LGPL and GPL version 3 texts, the Qt
+     licence reference, the Python licence (which also covers the libraries
+     the Python runtime includes, and states, under "Additional Conditions
+     for this Windows binary build", the conditions for Microsoft
+     Distributable Code), and the PyInstaller licence.
+
+5. Microsoft Visual C++ runtime and Microsoft Distributable Code
+   This copy contains no Microsoft Visual C++ runtime file. CyberLab needs
+   Microsoft Visual C++ Redistributable (x64), version 14.44 or later, which
+   you install from Microsoft under Microsoft's own licence terms;
+   "Start CyberLab.cmd" checks for it before starting CyberLab.
+   The Windows binary files supplied as part of the Python runtime in this
+   copy contain Microsoft Distributable Code as described in
+   LICENSES/Python-LICENSE.txt. This statement is limited to those Python
+   Windows binary files and does not assert that the Qt or PySide6 binaries
+   contain Microsoft Distributable Code. Sections 1 and 3 give no right in
+   that code. As the conditions in LICENSES/Python-LICENSE.txt require, you
+   may not:
+   a. alter any copyright, trademark or patent notice in it;
+   b. use Microsoft's trademarks in a way that suggests that CyberLab comes
+      from or is endorsed by Microsoft;
+   c. run it on a platform other than Microsoft operating systems, run-time
+      technologies or application platforms; or
+   d. include it in malicious, deceptive or unlawful programs.
+
+6. Agreement to these terms
+   a. You must agree to the CyberLab proprietary terms in section 1 and the
+      Microsoft Distributable Code protections in section 5 before you use
+      CyberLab. CyberLab shows these terms and opens nothing else until you
+      choose "I Agree". If you choose "Exit / I Do Not Agree", or close the
+      question, CyberLab exits without opening its workspace.
+   b. A distributor whom CyberLab's copyright holder has authorized to
+      distribute CyberLab agrees, by distributing it, to the CyberLab
+      proprietary terms in section 1 and the Microsoft Distributable Code
+      protections in section 5 as they apply to it, and must pass these terms
+      on unchanged.
+   c. This agreement does not restrict, replace, waive or condition any right
+      that the licences of Qt, PySide6, shiboken6, Python, PyInstaller or any
+      other third-party software give you. Those rights come from those
+      licences, not from this agreement, and apply whether or not you agree.
